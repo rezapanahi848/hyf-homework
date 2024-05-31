@@ -1,0 +1,84 @@
+/* General styling for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for each question block */
+form > div {
+  width: 60%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form > div > div#answers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form > div > div#answers > button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form > div > div#answers > button:hover {
+  background-color: #ddd;
+}
+
+form > div > div#answers > button.btnoptions {
+  font-size: 16px;
+}
+
+form > div > div#answers > button:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+form > div > div#answers > button:nth-child(odd) {
+  background-color: #fff;
+}
+
+form > div > div#answers > button:disabled {
+  cursor: not-allowed;
+}
+
+form > div > div#answers > button.Shuffle {
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+form > div > div#answers > button.Shuffle:hover {
+  background-color: #0056b3;
+}
+
+form > div > div.explanation {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Correct and incorrect answer styling */
+form > div > div#answers > button.correct {
+  background-color: MediumSeaGreen !important;
+  color: white;
+}
+
+form > div > div#answers > button.incorrect {
+  background-color: IndianRed !important;
+  color: white;
+}
